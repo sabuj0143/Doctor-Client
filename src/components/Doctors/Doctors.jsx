@@ -6,7 +6,7 @@ const Doctors = () => {
 
     const [doctors, setDoctors] = useState([]);
 
-    fetch('doctors.json')
+    fetch('http://localhost:5000/doctors')
         .then(res => res.json())
         .then(data => {
             setDoctors(data)
@@ -22,7 +22,7 @@ const Doctors = () => {
 
                 {
                     doctors.map(doctor => <DoctorCart
-                        key={doctor.id}
+                        key={doctor._id}
                         doctor={doctor}
                     >
 

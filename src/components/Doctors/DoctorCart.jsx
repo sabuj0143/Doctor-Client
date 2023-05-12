@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 const DoctorCart = ({ doctor }) => {
 
-    const { name, img, title, description, price } = doctor;
+    const { _id, name, img, title, description, price } = doctor;
     return (
         <>
             <div className="card w-96  bg-base-100 shadow-xl">
@@ -13,7 +15,9 @@ const DoctorCart = ({ doctor }) => {
                     <p><small> <span className="font-semibold">Description</span> :  {description}</small></p>
                     <p> <span className="font-semibold text-orange-500">Price</span> : ${price}</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Book Now</button>
+                        <Link to={`/booking/${_id}`}>
+                            <button className="btn btn-primary">Book Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
