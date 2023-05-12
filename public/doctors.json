@@ -1,0 +1,74 @@
+[
+    {
+        "id": "X8G9L2R5",
+        "name": "dr. Pressure Monitor",
+        "title": "Monitor Your Health with Precision",
+        "img": "https://ibb.co/319TDrY",
+        "price": 89.99,
+        "description": "This advanced blood pressure monitor is a reliable and easy-to-use device for tracking your blood pressure at home. It is designed to provide accurate readings and help you monitor your health with precision."
+    },
+    {
+        "id": "Y4F7P3H1",
+        "name": "dr. Fitness Tracker",
+        "title": "Stay Active and Fit",
+        "img": "https://ibb.co/S5ptqrk",
+        "price": 49.99,
+        "color": "Black",
+        "brand": "FitLife",
+        "description": "This smart fitness tracker is your ultimate companion for an active and healthy lifestyle. It tracks your steps, calories burned, heart rate, and sleep patterns, providing valuable insights into your fitness journey."
+    },
+    {
+        "id": "Z9M6K7N2",
+        "name": "dr. Bluetooth Earbuds",
+        "title": "Immerse Yourself in Music",
+        "img": "https://ibb.co/nsTRGbM",
+        "price": 79.99,
+        "color": "White",
+        "brand": "SoundWave",
+        "description": "Experience high-quality audio with these wireless Bluetooth earbuds. They offer a comfortable fit, long battery life, and seamless connectivity, making them perfect for music lovers on the go."
+    },
+    {
+        "id": "A5B1C8D3",
+        "name": "dr. Power Bank",
+        "title": "Stay Charged Anywhere",
+        "img": "https://ibb.co/HBtjhhJ",
+        "price": 209.99,
+        "color": "Silver",
+        "brand": "PowerUp",
+        "description": "Never run out of battery again with this portable power bank. It provides fast charging for your devices and is compact enough to carry in your pocket or bag."
+    },
+    {
+        "id": "E2F9G4H6",
+        "name": "dr. Digital Camera",
+        "title": "Capture Memories in High Definition",
+        "img": "https://ibb.co/C5RBCRj",
+        "price": 199.99,
+        "color": "Black",
+        "brand": "PixelPerfect",
+        "description": "Unleash your creativity with this digital camera. It features high-definition image capture, multiple shooting modes, and built-in filters to help you capture and share stunning photos."
+    },
+    {
+        "id": "I3J7K2L9",
+        "name": "dr. Security ",
+        "title": "Protect Your Home with Technology",
+        "img": "https://ibb.co/TMxgxbp",
+        "price": 249.99,
+        "color": "White",
+        "brand": "SecureHome",
+        "description": "Keep your home safe and secure with this smart home security system. It includes motion sensors, HD cameras, and a mobile app for remote monitoring and control."
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
