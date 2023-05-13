@@ -11,7 +11,7 @@ const Bookings = () => {
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setBookings(data))
     }, [])
 
     return (
