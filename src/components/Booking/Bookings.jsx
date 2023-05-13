@@ -6,7 +6,7 @@ const Bookings = () => {
 
     const { user } = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
-    console.log(bookings);
+    // console.log(bookings);
 
     const url = `http://localhost:5000/bookings?email=${user.email}`
 

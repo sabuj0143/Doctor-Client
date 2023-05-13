@@ -40,7 +40,7 @@ const Booking = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             if(data.insertedId){
                 // alert('Booking Added Successfully');
                 Swal.fire({

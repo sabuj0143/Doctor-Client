@@ -1,6 +1,44 @@
+import Swal from "sweetalert2";
+
 const BookingCart = ({ book }) => {
 
-    const { email, date, img, userName, amount, doctorName, phone } = book;
+    const { email, date, img, _id, userName, amount, doctorName, phone } = book;
+
+    const handleDelete = _id => {
+        console.log(_id);
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+
+                //   Delete this Bookings List
+
+                fetch(`http://localhost:5000/bookings/${_id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your Booking has been deleted.',
+                                'success'
+                            )
+                        }
+                    })
+            }
+        })
+
+    }
 
     return (
         <div>
@@ -18,7 +56,7 @@ const BookingCart = ({ book }) => {
                     <p>Email : {email}</p>
 
                     <div>
-                        <button className="btn btn-error">Delete</button>
+                        <button onClick={() => handleDelete(_id)} className="btn btn-error">Delete</button>
                     </div>
 
                 </div>
