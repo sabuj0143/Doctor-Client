@@ -1,11 +1,15 @@
+import { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Booking = () => {
     const service = useLoaderData();
     const { name, price, _id, img } = service;
+    const {user} = useContext(AuthContext)
 
     const handleAddBook = event => {
+
         event.preventDefault();
 
         const form = event.target;
@@ -15,7 +19,7 @@ const Booking = () => {
         const date = form.date.value;
         const amount = form.amount.value;
         const doctor = form.doctor.value;
-        console.log(name, email, phone, amount, doctor, date);
+        // console.log(name, email, phone, amount, doctor, date);
         const book = {
             userName: name,
             email: email,
@@ -26,7 +30,7 @@ const Booking = () => {
             bookId: _id,
             doctorName: doctor,
         }
-        console.log(book);
+        // console.log(book);
         fetch('http://localhost:5000/booking', {
             method: 'POST',
             headers: {
@@ -64,7 +68,7 @@ const Booking = () => {
                         <label className="label">
                             <span className="label-text">Email</span>
                         </label>
-                        <input type="email" name="email" placeholder="Enter your email" className="input input-bordered" />
+                        <input type="email" name="email" defaultValue={user?.email} placeholder="Enter your email" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
